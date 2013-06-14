@@ -23,6 +23,7 @@
 		C3227E12176B7D2C00F9D414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3227DED176B7D2C00F9D414 /* Foundation.framework */; };
 		C3227E1A176B7D2C00F9D414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3227E18176B7D2C00F9D414 /* InfoPlist.strings */; };
 		C3227E1D176B7D2C00F9D414 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3227E1C176B7D2C00F9D414 /* CalculatorTests.m */; };
+		C3227E28176BAE9700F9D414 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = C3227E27176BAE9700F9D414 /* CalculatorBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		C3227E19176B7D2C00F9D414 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3227E1B176B7D2C00F9D414 /* CalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorTests.h; sourceTree = "<group>"; };
 		C3227E1C176B7D2C00F9D414 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		C3227E26176BAE9700F9D414 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		C3227E27176BAE9700F9D414 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		C3227DF1176B7D2C00F9D414 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C3227E26176BAE9700F9D414 /* CalculatorBrain.h */,
+				C3227E27176BAE9700F9D414 /* CalculatorBrain.m */,
 				C3227DFA176B7D2C00F9D414 /* CalculatorAppDelegate.h */,
 				C3227DFB176B7D2C00F9D414 /* CalculatorAppDelegate.m */,
 				C3227E03176B7D2C00F9D414 /* MainStoryboard.storyboard */,
@@ -274,6 +279,7 @@
 				C3227DF8176B7D2C00F9D414 /* main.m in Sources */,
 				C3227DFC176B7D2C00F9D414 /* CalculatorAppDelegate.m in Sources */,
 				C3227E08176B7D2C00F9D414 /* CalculatorViewController.m in Sources */,
+				C3227E28176BAE9700F9D414 /* CalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
