@@ -28,28 +28,23 @@
     [self.operandStack addObject:[NSNumber numberWithDouble:operand]];
 }
 
-- (double)popOperand
+- (void)clearState
 {
-    NSNumber *operandObject = [self.operandStack lastObject];
-    if (operandObject)[self.operandStack removeLastObject];
-    return operandObject.doubleValue;
+    [self.operandStack removeAllObjects];
 }
 
-
-- (double)performOperation:(NSString *)operation
+- (double)currentAverage
 {
+    double total = 0;
     double result = 0;
-    // calculate result
-    if ([operation isEqualToString:@"+"]) {
-        result = [self popOperand] + [self popOperand];
-    } else if ([operation isEqualToString:@"-"]) {
-        result = [self popOperand] - [self popOperand];
-    } else if ([operation isEqualToString:@"*"]) {
-        result = [self popOperand] * [self popOperand];
-    } else if ([operation isEqualToString:@"/"]) {
-        result = [self popOperand] / [self popOperand];
+
+    for (NSNumber *operand in [self operandStack]) {
+        total += operand.doubleValue;
     }
-    [self pushOperand:result];
+    NSInteger size = [[self operandStack] count];
+    result = total / size;
+    
     return result;
 }
+
 @end

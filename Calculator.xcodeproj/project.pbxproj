@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30F7D0217AB1A310048B279 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = C30F7D0117AB1A310048B279 /* 57x57.png */; };
+		C30F7D0417AB1AA60048B279 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = C30F7D0317AB1AA60048B279 /* 114x114.png */; };
 		C3227DEC176B7D2C00F9D414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3227DEB176B7D2C00F9D414 /* UIKit.framework */; };
 		C3227DEE176B7D2C00F9D414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3227DED176B7D2C00F9D414 /* Foundation.framework */; };
 		C3227DF0176B7D2C00F9D414 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3227DEF176B7D2C00F9D414 /* CoreGraphics.framework */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C30F7D0117AB1A310048B279 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		C30F7D0317AB1AA60048B279 /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
 		C3227DE8176B7D2C00F9D414 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3227DEB176B7D2C00F9D414 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C3227DED176B7D2C00F9D414 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +94,8 @@
 		C3227DDF176B7D2C00F9D414 = {
 			isa = PBXGroup;
 			children = (
+				C30F7D0317AB1AA60048B279 /* 114x114.png */,
+				C30F7D0117AB1A310048B279 /* 57x57.png */,
 				C3227DF1176B7D2C00F9D414 /* Calculator */,
 				C3227E15176B7D2C00F9D414 /* CalculatorTests */,
 				C3227DEA176B7D2C00F9D414 /* Frameworks */,
@@ -242,6 +248,8 @@
 				C3227E00176B7D2C00F9D414 /* Default@2x.png in Resources */,
 				C3227E02176B7D2C00F9D414 /* Default-568h@2x.png in Resources */,
 				C3227E05176B7D2C00F9D414 /* MainStoryboard.storyboard in Resources */,
+				C30F7D0217AB1A310048B279 /* 57x57.png in Resources */,
+				C30F7D0417AB1AA60048B279 /* 114x114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 @interface CalculatorBrain : NSObject
 
 - (void)pushOperand:(double)operand;
-- (double)performOperation:(NSString *)operation;
+- (double)currentAverage;
+- (void)clearState;
 
 @end

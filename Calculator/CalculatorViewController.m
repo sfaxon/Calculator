@@ -43,16 +43,20 @@
     }
 }
 
-- (IBAction)operationPressed:(UIButton *)sender {
-    if (self.userIsInTheMiddleOfEnteringANumber) [self enterPressed];
-    double result = [self.brain performOperation:sender.currentTitle];
-    NSString *resultString = [NSString stringWithFormat:@"%g", result];
-    self.display.text = resultString;
+- (IBAction)clearPressed:(UIButton *)sender {
+    [self.brain clearState];
+    [self updateUI];
 }
 
 - (IBAction)enterPressed {
     [self.brain pushOperand:[self.display.text doubleValue]];
     self.userIsInTheMiddleOfEnteringANumber = NO;
+    [self updateUI];
+}
+
+- (void)updateUI {
+    NSString *average = [NSString stringWithFormat:@"Average: %f", [self.brain currentAverage]];
+    self.result.text = average;
 }
 
 - (void)viewDidLoad
